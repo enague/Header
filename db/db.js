@@ -4,7 +4,7 @@ const mockHostelData = require("./mockHostelData.json");
 
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://enague:Valentino1234@ds163300.mlab.com:63300/header");
+mongoose.connect("mongodb://<user>:<password>@ds163300.mlab.com:63300/header");
 
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "db connection error:"));
